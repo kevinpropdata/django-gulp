@@ -12,4 +12,4 @@ fi
 
 build_dir=$1
 cd $build_dir
-./node_modules/.bin/gulp build
+./node_modules/.bin/gulp build --gulpfile $build_dir/gulpfile.js
