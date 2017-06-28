@@ -15,4 +15,5 @@ pwd
 cd $build_dir
 ./node_modules/.bin/gulp build
 pwd
-mv static/build $build_dir/static/
+cd static/build
+ls
