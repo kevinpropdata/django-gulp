@@ -11,5 +11,5 @@ if [ -d "$env_dir" ]; then
 fi
 
 build_dir=$1
-cd $build_dir
-./node_modules/.bin/gulp build --gulpfile $build_dir/gulpfile.js
+./node_modules/.bin/gulp build
+mv static/build $build_dir/static/
