@@ -1,6 +1,6 @@
 #!/bin/sh
 
-if [ -f $1/gulpfile ]; then
+if [ -f $1/gulpfile.js ]; then
   echo "Django Gulp build pack detected..."
   exit 0
 else
