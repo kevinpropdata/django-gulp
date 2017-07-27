@@ -1,5 +1,4 @@
 #!/bin/sh
-
 env_dir=$3
 
 whitelist_regex=${2:-''}
@@ -10,9 +9,7 @@ if [ -d "$env_dir" ]; then
   done
 fi
 
+build_dir=$1
 
-$build_dir=$1
 cd $build_dir
 ./node_modules/.bin/gulp build
-python $build_dir/manage.py collectstatic
-python $build_dir/manage.py compress --force
