@@ -11,8 +11,8 @@ if [ -d "$env_dir" ]; then
 fi
 
 
-
+$build_dir=$1
 cd $build_dir
 ./node_modules/.bin/gulp build
-python $BUILD_DIR/manage.py collectstatic
-python $BUILD_DIR/manage.py compress --force
+python $build_dir/manage.py collectstatic
+python $build_dir/manage.py compress --force
